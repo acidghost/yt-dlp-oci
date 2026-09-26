@@ -1,0 +1,15 @@
+# Only the dependency lockfile is needed as build context.
+.git
+.github
+scripts
+.plans
+.python-version
+mise.toml
+mise.lock
+requirements.in
+justfile
+README.md
+renovate.json
+UNLICENSE
+.env
+.env.*

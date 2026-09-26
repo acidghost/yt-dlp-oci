@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>acidghost/renovate-config",
+    "local>acidghost/renovate-config:approve(minor)",
+    "local>acidghost/renovate-config:approve(patch)"
+  ],
+  "pip-compile": {
+    "managerFilePatterns": ["/^requirements\\.txt$/"]
+  },
+  "pip_requirements": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["python"],
+      "groupName": "python"
+    }
+  ]
+}
